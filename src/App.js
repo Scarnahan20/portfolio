@@ -1,9 +1,8 @@
 import { BrowserRouter, Route } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Projects from './components/Projects.js';
+import Navigation from './components/Navigation.js';
 import About from './components/About.js';
+import Projects from './components/Projects.js';
+import Contact from './components/Contact.js';
 import './App.css';
 
 
@@ -12,17 +11,11 @@ function App() {
     <BrowserRouter>
       <div className="App">
 
-        <Container fluid>
-          <Navbar bg="light" expand='lg'>
-            <Navbar.Brand>Stefan Carnahan</Navbar.Brand>
-            <Nav.Link href="/">About</Nav.Link>
-            <Nav.Link href="/projects">Projects</Nav.Link>
-          </Navbar>
-        </Container>
-
-
+        <Navigation />
+        
         <Route exact path="/" component={About} />
         <Route path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
 
       </div>
     </BrowserRouter>

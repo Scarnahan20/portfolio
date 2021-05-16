@@ -1,10 +1,12 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
 
 function About(props) {
     return (
-        <div>
+        <Container fluid>
             <h1>About</h1>
-        </div>
+            <img className='profile' src='/images/profile-image.jpg' alt='profile' />
+        </Container>
     )
 }
 
