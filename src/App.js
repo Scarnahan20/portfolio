@@ -13,7 +13,7 @@ function App() {
 
         <Navigation />
         
-        <Route exact path="/" component={About} />
+        <Route path="/" component={About} />
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
 
